@@ -1,0 +1,7 @@
+version: '3'
+services:
+  react-app:
+    image: prod-app-name
+    ports:
+      - "8083:80"
+    restart: unless-stopped  
