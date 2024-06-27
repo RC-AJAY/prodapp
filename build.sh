@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t test-app-name . 
+docker build -t test . 
