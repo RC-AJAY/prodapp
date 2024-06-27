@@ -9,7 +9,7 @@ if [[ $GIT_BRANCH == "origin/dev" ]]; then
         docker tag test rc2024/dev
         docker push rc2024/dev
 
-if [[ $GIT_BRANCH == "origin/master" ]]; then
+elif [[ $GIT_BRANCH == "origin/master" ]]; then
         sh'chmod +x build.sh'
         sh'./build.sh'
         docker-compose up -d
